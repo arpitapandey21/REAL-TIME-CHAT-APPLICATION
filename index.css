@@ -1,0 +1,49 @@
+:root {
+  --pink-100: #fff0f6;
+  --pink-200: #ffd6e7;
+  --pink-300: #ffadd2;
+  --pink-400: #ff85c2;
+  --pink-500: #f759ab;
+  --pink-600: #eb2f96;
+  --white: #ffffff;
+  --off-white: #fdf4f8;
+  --text-main: #3d1a2e;
+  --text-muted: #b07090;
+  --text-light: #d4a0b8;
+  --shadow-sm: 0 2px 12px rgba(247,89,171,0.09);
+  --shadow-md: 0 4px 24px rgba(247,89,171,0.16);
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font-body);
+  background: var(--off-white);
+  color: var(--text-main);
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--pink-100); }
+::-webkit-scrollbar-thumb { background: var(--pink-300); border-radius: 4px; }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(14px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30%           { transform: translateY(-5px); }
+}
+@keyframes pulseGlow {
+  0%,100% { box-shadow: 0 0 0 0 rgba(247,89,171,0.5); }
+  50%     { box-shadow: 0 0 0 6px rgba(247,89,171,0); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
