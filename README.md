@@ -64,7 +64,7 @@ Future Roadmap
 
 🎨 Advanced theming system
 
-##OUTPUT
+## OUTPUT
 
 <img width="1913" height="923" alt="Image" src="https://github.com/user-attachments/assets/ee2844e4-feeb-4390-a9d7-2de8ce88a446" />
 
